@@ -1,0 +1,380 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Snowstorm;
+    src: url("/resources/fonts/Snowstorm.otf") format("truetype");
+}
+
+@font-face {
+    font-family: InvolveBold;
+    src: url("/resources/fonts/InvolveBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: InvolveMedium;
+    src: url("/resources/fonts/InvolveMedium.ttf") format("truetype");
+}
+
+.texture {
+    background-image: url('/resources/img/texture.svg');
+    background-repeat: repeat;
+    background-size: 12rem;
+}
+
+::selection {
+    background-color: #990000;
+    color: #FAEEDD;
+}
+
+input {
+    caret-color: #990000;
+}
+
+option {
+    background-color: #B59B7C;
+    color: #442D25;
+}
+
+option:hover {
+    background-color: #E0C9A6;
+    color: #442D25;
+}
+
+option:checked {
+    background-color: #9E3332;
+    color: #FAEEDD;
+}
+
+.role input[type=radio] {
+    display: none;
+}
+
+.role input[type=radio]:checked + label {
+    color: #9E3332;
+    border-bottom: 4px solid #9E3332;
+}
+
+nav {
+    z-index: 100;
+}
+
+.cardhead {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.cardheadfaq {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+select {
+    background-color: #B59B7C;
+    border: 4px solid #442D25;
+    color: #442D25;
+}
+
+textarea {
+    background-color: #B59B7C;
+    border: 4px solid #442D25;
+    color: #B59B7C;
+}
+
+textarea:focus {
+    background-color: #E0C9A6;
+    border: 4px dashed #442D25;
+    color: #442D25;
+}
+
+/* 
+    ЭЛЕМЕНТЫ ТЕМНОЙ ТЕМЫ
+*/
+
+.dark h1 {
+    color: #E0C9A6;
+}
+
+.dark h2 {
+    color: #B59B7C;
+}
+
+.dark h3 {
+    color: #9E3332;
+}
+
+.dark h4 {
+    color: #442D25;
+}
+
+.dark h5 {
+    color: #211812;
+}
+
+.dark div #header {
+    background-color: #211812;
+}
+
+.dark nav #header {
+    background-color: #211812;
+}
+
+.dark a {
+    color: #E0C9A6;
+    border-color: #E0C9A6;
+}
+
+.dark a:hover {
+    color: #9E3332;
+    border-color: #9E3332;
+}
+
+.dark footer {
+    border-color: #B59B7C;
+    background-color: #442D25;
+}
+
+.dark button {
+    border-color: #9E3332;
+    color: #E0C9A6;
+}
+
+.dark div #logo-theme {
+    color: #9E3332;
+}
+
+.dark div #logo-theme:hover {
+    color: #E0C9A6;
+}
+
+.dark input::placeholder {
+    color: #B59B7C;
+}
+
+.dark a #login {
+    color: #9E3332;
+}
+
+.dark a #login:hover {
+    color: #B59B7C;
+}
+
+.dark a #button {
+    background-color: transparent;
+    color: #FAEEDD;
+}
+
+.dark a #button:hover {
+    border-color: #9E3332;
+    background-color: #9E3332;
+    color: #9E3332;
+}
+
+.dark button #button {
+    background-color: #9E3332;
+    color: #FAEEDD;
+}
+
+.dark button #button:hover {
+    border-color: #9E3332;
+    background-color: #211812;
+    color: #9E3332;
+}
+
+.dark a #buttonacc {
+    background-color: #9E3332;
+    color: #9E3332;
+}
+
+.dark a #buttonacc:hover {
+    border-color: #9E3332;
+    background-color: transparent;
+    color: #FAEEDD;
+}
+
+.dark button #hamburger {
+    stroke: #e0c9a6;
+}
+
+.dark button #search {
+    fill: #B59B7C;
+}
+
+.dark div #searchbtn {
+    background-color: #211812;
+    border-color: #B59B7C;
+}
+
+.dark body {
+    background-color: #211812;
+}
+
+.dark div #mobile-menu {
+    background-color: #211812;
+    color: #B59B7C;
+}
+
+.dark div #cardorder {
+    background-color: #442D25;
+    border-color: #B59B7C;
+}
+
+.dark div #cardorderbg {
+    background-color: rgb(33, 24, 18, 0.5);
+    border-color: #B59B7C;
+}
+
+.dark div #dashboard {
+    background-color: #211812;
+    border-color: #211812;
+}
+
+.dark div #dashboardhead {
+    background-color: #442D25;
+}
+
+.dark div #dashboardbg {
+    background-color: rgba(68, 45, 37, 0.3);
+}
+
+.dark div #news {
+    background-color: #211812;
+    border-color: #211812;
+}
+
+.dark div #map {
+    background-color: #211812;
+}
+
+.dark div #comment {
+    background-color: #211812;
+    border-color: #211812;
+}
+
+.dark div #card {
+    background-color: #442D25;
+    border-color: #442D25;
+}
+
+.dark div #cardin {
+    background-color: #211812;
+    border-color: #211812;
+}
+
+.dark div #cardtextfaq {
+    background-color: #211812;
+    color: #B59B7C;
+}
+
+.dark div #project {
+    background-color: #211812;
+}
+
+.dark input {
+    background-color: #211812;
+    border-color: #B59B7C;
+    color: #B59B7C;
+}
+
+.dark input:focus {
+    background-color: #B59B7C;
+    color: #442D25;
+}
+
+.dark textarea {
+    background-color: #211812;
+    border: 4px solid #B59B7C;
+    color: #B59B7C;
+}
+
+.dark textarea:focus {
+    border: 4px dashed #442D25;
+    background-color: #B59B7C;
+    color: #442D25;
+}
+
+.dark table {
+    background-color: #442D25;
+    border-color: #B59B7C;
+}
+
+.dark table thead {
+    border-color: #B59B7C;
+}
+
+.dark table tr {
+    border-color: #B59B7C;
+}
+
+.dark table td {
+    border-color: #B59B7C;
+}
+
+.dark table th {
+    border-color: #B59B7C;
+}
+
+.dark table tr:first-child {
+    background-color: #442D25;
+    color: #E0C9A6;
+}
+
+.dark table td:first-child {
+    background-color: #9E3332;
+    color: #FAEEDD;
+}
+
+.dark table td:nth-child(2) {
+    background-color: #9E3332;
+    color: #FAEEDD;
+}
+
+.dark table td:last-child {
+    background-color: #9E3332;
+    color: #FAEEDD;
+}
+
+.dark table a {
+    color: #FAEEDD;
+}
+
+.dark table a:hover {
+    color: #B59B7C;
+}
+
+.dark table button {
+    color: #FAEEDD;
+}
+
+.dark table button:hover {
+    color: #211812;
+}
+
+.dark table tr {
+    border-color: #B59B7C;
+}
+
+.dark table td {
+    background-color: #211812;
+    color: #E0C9A6;
+}
+
+.dark div #zag {
+    background-color: #211812;
+}
+
+.dark select {
+    background-color: #211812;
+    border-color: #B59B7C;
+    color: #B59B7C;
+}
+
+.dark select:focus {
+    background-color: #211812;
+    color: #B59B7C;
+}
+
+.dark label {
+    color: #B59B7C;
+}

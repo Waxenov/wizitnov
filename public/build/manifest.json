@@ -1,0 +1,29 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-CExU3qV6.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/fonts/InvolveBold.ttf": {
+    "file": "assets/InvolveBold-Lkm7HVSs.ttf",
+    "src": "resources/fonts/InvolveBold.ttf"
+  },
+  "resources/fonts/InvolveMedium.ttf": {
+    "file": "assets/InvolveMedium-CPLfwZ-D.ttf",
+    "src": "resources/fonts/InvolveMedium.ttf"
+  },
+  "resources/fonts/Snowstorm.otf": {
+    "file": "assets/Snowstorm-BCCwOO42.otf",
+    "src": "resources/fonts/Snowstorm.otf"
+  },
+  "resources/img/texture.svg": {
+    "file": "assets/texture-DrvgxJsF.svg",
+    "src": "resources/img/texture.svg"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-C9Mb899Y.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
