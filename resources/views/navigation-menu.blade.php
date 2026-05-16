@@ -46,6 +46,10 @@
                 {{ __('Проект') }}
             </x-nav-link>
 
+            <x-nav-link href="{{ route('about') }}" :active="request()->is('about') || request()->is('about/*')">
+                {{ __('Автор') }}
+            </x-nav-link>
+
             <x-nav-link href="{{ route('contacts') }}" :active="request()->routeIs('contacts')">
                 {{ __('Контакты') }}
             </x-nav-link>
@@ -156,6 +160,10 @@
 
                     <x-responsive-nav-link href="{{ route('project') }}" :active="request()->routeIs('project')" class="text-coffee">
                         {{ __('Проект') }}
+                    </x-responsive-nav-link>
+
+                    <x-responsive-nav-link href="{{ route('about') }}" :active="request()->is('about') || request()->is('about/*')" class="text-coffee">
+                        {{ __('Автор') }}
                     </x-responsive-nav-link>
 
                     <x-responsive-nav-link href="{{ route('contacts') }}" :active="request()->routeIs('contacts')" class="text-coffee">

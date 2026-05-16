@@ -16,6 +16,25 @@ Route::get('/create', function () {
     return view('create');
 })->name('create');
 
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
+Route::get('/about/', function () {
+    return view('about');
+});
+
+Route::get('/about/{path}', function ($path) {
+    $path = str_replace(['../', '..\\'], '', $path);
+    $file = base_path('about/' . $path);
+
+    if (! file_exists($file)) {
+        abort(404);
+    }
+
+    return response()->file($file);
+})->where('path', 'fonts/.*|favicon\.ico|logo\.svg|logow\.png|men\.png');
+
 Route::get('/orderscustomer', function () {
     return view('orderscustomer');
 })->name('orderscustomer');
